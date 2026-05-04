@@ -1,3 +1,4 @@
+COOKIE_FILE = "cookies.txt"
 import asyncio
 import json
 import os
