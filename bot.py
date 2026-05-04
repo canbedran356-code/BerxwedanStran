@@ -213,7 +213,7 @@ async def resolve_youtube(query: str, *, video: bool, requested_by: str) -> Trac
         "quiet": True,
         "no_warnings": True,
         "noplaylist": True,
-        "format": "best[height<=720][vcodec!=none][acodec!=none]/best" if video else "bestaudio/best",
+        "format": "best[height<=720]/best" if video else "bestaudio/best[ext=m4a]/bestaudio/best",
         "default_search": "ytsearch",
         "extract_flat": False,
         "cachedir": False,
