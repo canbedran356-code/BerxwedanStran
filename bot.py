@@ -218,6 +218,11 @@ async def resolve_youtube(query: str, *, video: bool, requested_by: str) -> Trac
         "extract_flat": False,
         "cachedir": False,
         "cookiefile": "cookies.txt",
+        "extractor_args": {
+            "youtube": {
+              "player_client": ["ios", "web"],
+            }
+        },
     }
 
     def extract() -> dict:
