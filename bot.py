@@ -217,6 +217,7 @@ async def resolve_youtube(query: str, *, video: bool, requested_by: str) -> Trac
         "default_search": "ytsearch",
         "extract_flat": False,
         "cachedir": False,
+        "cookiefile": "cookies.txt",
     }
 
     def extract() -> dict:
